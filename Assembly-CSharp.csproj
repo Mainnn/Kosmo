@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,29 +47,51 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\DirectMoving.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\VisualEffect.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Wave.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\LevelController.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Player.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\FollowThePath.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\PlayerMoving.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Boundary.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Bonus.cs" />
-    <Compile Include="Assets\Space Shooter Template FREE\Scripts\PoolingController.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\RepeatingBackground.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\PlayerShooting.cs" />
-    <Compile Include="Assets\Scripts\CameraSize.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader\SceneLoader.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\FollowThePath.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\VisualEffect.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Bonus.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\PoolingController.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Scripts\SceenGame\PlayZone\BorderHight.cs" />
     <Compile Include="Assets\Scripts\CameraWidth.cs" />
+    <Compile Include="Assets\Scripts\CameraSize.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\DirectMoving.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Player.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Data\LevelNameData.cs" />
     <Compile Include="Assets\Scripts\BackgoundContoller.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Wave.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\LevelController.cs" />
+    <Compile Include="Assets\Scripts\SceenGame\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\PlayerMoving.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Boundary.cs" />
+    <Compile Include="Assets\Space Shooter Template FREE\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\SceenGame\PlayZone\BorderVerticalPosition.cs" />
+    <Compile Include="Assets\Scripts\EventSystem\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\EventSystem\GameEventListener.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader\PanelSize.cs" />
+    <Compile Include="Assets\Scripts\SceenGame\StartEveny.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader\SaveSafeArea.cs" />
+    <Compile Include="Assets\Scripts\Data\SafeAreaData.cs" />
+    <Compile Include="Assets\Scripts\SceenGame\Player\PlayerStartPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -708,6 +730,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.DeviceSimulator.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.DeviceSimulator.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -722,9 +747,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.DeviceSimulator.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

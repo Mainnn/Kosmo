@@ -21,7 +21,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PlayZoneBorder
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 3918925917
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
